@@ -1,0 +1,50 @@
+# === Python general ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+
+# === Virtual environments ===
+.venv/
+env/
+venv/
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints/
+*.ipynb_convert/
+*.ipynb_restore/
+
+# === Data files (raw/interim/processed) ===
+data/raw/
+data/interim/
+data/processed/
+artifacts/
+models/
+
+# === Large binary files ===
+*.h5
+*.hdf5
+*.db
+*.sqlite
+*.parquet
+*.csv
+*.tsv
+*.xlsx
+*.xls
+
+# === Logs and temp ===
+*.log
+*.tmp
+logs/
+
+# === System / IDE ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Reports/outputs ===
+reports/*.pptx
+reports/*.pdf
