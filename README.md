@@ -31,27 +31,33 @@ Key steps included:
 
 ---
 
-## 🧾 Folder Structure
+## 📁 Folder Structure
+
+```plaintext
+project_root/
 ├── data/
-│ ├── raw/ # Original data
-│ ├── interim/ # Intermediate processed data
-│ ├── processed/ # Modeling-ready data
+│   ├── raw/               # Original data
+│   ├── interim/           # Intermediate processed data
+│   └── processed/         # Modeling-ready data
 │
-├── notebooks/ # Jupyter notebooks
-│ ├── 0_setup_project.ipynb
-│ ├── 1_data_preparation.ipynb
-│ ├── 2_EDA.ipynb
-│ ├── 3_Data Cleansing.ipynb
-│ ├── 4.Feature Engineering.ipynb
-│ ├── 5_Feature_Selection_&_ One-Hote_Encoding.ipynb
-│ ├── 6_Model_Selection_&_Fine_Tuning.ipynb
-│ └── 8_github_upload.ipynb
+├── notebooks/             # Jupyter notebooks
+│   ├── 0_setup_project.ipynb
+│   ├── 1_data_preparation.ipynb
+│   ├── 2_EDA.ipynb
+│   ├── 3_Data_Cleansing.ipynb
+│   ├── 4_Feature_Engineering.ipynb
+│   ├── 5_Feature_Selection_&_One-Hot_Encoding.ipynb
+│   ├── 6_Model_Selection_&_Fine_Tuning.ipynb
+│   └── 8_github_upload.ipynb
 │
-├── reports/ # Figures, tables, and summaries
-├── artifacts/ # Model outputs and snapshots
-├── logs/ # Logs for debugging
+├── reports/               # Figures, tables, and summaries
+├── artifacts/             # Model outputs and snapshots
+├── logs/                  # Logs for debugging
+│
 ├── README.md
 └── config.json
+
+```
 
 ---
 
