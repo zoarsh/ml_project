@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project Title
 Short overview, how to run, structure, and goals.
 
@@ -80,4 +81,7 @@ During the column-handling stage, I standardized variable types, cleaned and nor
   ✅ Dropped constant-value columns that added no analytic signal.  
 
 **  
+=======
+# ml_project
+>>>>>>> 68fbecbdbc98db782bc54a59b7ecc30d0918f1bd
 
