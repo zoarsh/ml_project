@@ -48,3 +48,9 @@ Thumbs.db
 # === Reports/outputs ===
 reports/*.pptx
 reports/*.pdf
+
+# === Stop syncing local/temporary folders ===
+.jupyter/
+docs/
+notebooks/
+catboost_info/
