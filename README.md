@@ -22,10 +22,6 @@ In the setup notebook (`setup_project.ipynb`), I organized the project so it is 
 ⚠️ **Problem:** The main date field was stored in two inconsistent formats: around 63% of records with seconds and 37% without.
 ✅ **Solution:** All 69,802 records were successfully converted to a unified datetime format, with additional derived fields for day, month, and year to allow consistent temporal analysis.
 
-## Duplicate Forms
-
-⚠️ **Problem:** Out of 69,802 records, 16,135 (23.3%) belong to duplicate groups—multiple forms submitted for the same child on the same day. Most involved two to three forms, but some cases reached 10–30 forms. For example, 2-form groups accounted for 68.2% of duplicates, 3-form groups for 21.6%, and 4-form groups for 5.2%.
-✅ 
 
 ## Duplicate Forms
 
@@ -46,3 +42,42 @@ In the setup notebook (`setup_project.ipynb`), I organized the project so it is 
 
 ⚠️ **Problem**: The original syntax handled only time gaps, without addressing same-day duplicates or invalid dates.
 ✅ **Solution**: The decision was to apply a time-window rule of 60–465 days (2–15 months). For each first form (m1), a second form (m2) was identified within this range; if multiple candidates existed, the latest one was chosen. Forms with gaps shorter than 2 months or longer than 15 months remain in the long file but are excluded from the wide format. After resolving same-day duplicates and invalid dates, the dataset was transformed into wide format with suffixes (_m1, _m2), and quality checks were performed to count how many children passed each step, flag keys left without valid pairs, and verify that no duplicates remained after the pivot.
+
+## Column Handling  
+
+During the column-handling stage, I standardized variable types, cleaned and normalized text values, consolidated categories, merged duplicate columns from the two measurements, removed non-informative fields, and engineered new population indicators. This ensured a compact, consistent, and analysis-ready dataset.  
+
+**Problems and Solutions**  
+
+- **Column Types & Dates**  
+  ⚠️ Many columns were stored as `object`, and dates appeared as inconsistent strings.  
+  ✅ Converted columns to proper types (`category`, `string`, `datetime`) with uniform parsing rules.  
+
+- **Text Normalization**  
+  ⚠️ Free-text fields included stray characters, hyphens, dots, and whitespace, fragmenting values.  
+  ✅ Removed special characters, trimmed spaces, and standardized separators.  
+
+- **Category Consolidation (Programs & Birth Countries)**  
+  ⚠️ Program names and countries of birth appeared under multiple near-duplicate labels.  
+  ✅ Unified program names into a consistent scheme and grouped countries into broader regions.  
+
+- **Merging m1/m2 Twin Columns**  
+  ⚠️ Identical attributes existed twice in the wide file (m1 and m2).  
+  ✅ Merged each pair into one canonical column, preferring m1 unless missing.  
+
+- **Derived Population Signals**  
+  ⚠️ Indicators for Haredi, Arab, Jewish, Other and religiosity level were not explicitly available.  
+  ✅ Engineered new features for population groups and religiosity, based on form type and population-group variables.
+
+- **Service, Program, and Locality Names**
+  ⚠️ Text fields for service_name, program_name, and residence_locality contained multiple near-duplicates, inconsistent spellings, and redundant categories .
+  ✅ Applied normalization rules (lowercasing, trimming, hyphen removal) and canonical mapping patterns for consistent naming. Program names from the two measurements (m1/m2) were
+      verified as nearly identical and merged into a single field. After cleaning, overlap between service_name and program_name increased from 51.5% to 90.9%, confirming successful
+      unification and substantial reduction in duplicate categories.
+
+- **Non-informative Columns**  
+  ⚠️ Several fields carried constant values across all rows.  
+  ✅ Dropped constant-value columns that added no analytic signal.  
+
+**  
+
