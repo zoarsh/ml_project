@@ -55,6 +55,6 @@ SHAP analyses were performed on the **full sample** and by **baseline risk tiers
 ---
 
 ### 📚 Additional Resources
-- 📄 **Full Project Report:** [Data Science Project Protocol — Zohar Or Sharvit (PDF)](https://github.com/zoarsh/ml_project/blob/main/Data%20Science%20Project%20Protocol-%20Zohar%20Or%20S%20harvit.pdf)  
+- 📄 **Full Project Report:** [Data Science Project Protocol — Zohar Or Sharvit (PDF)] (https://github.com/zoarsh/ml_project/blob/main/Data%20Science%20Project%20Protocol-%20Zohar%20Or%20Sharvit.pdf) 
 - 📘 **Extended README (Full Documentation):** [README_full.md](https://github.com/zoarsh/ml_project/blob/main/README_full.md)  
 - 🖼️ **Figures & Visualizations:** see `reports/figures/`
