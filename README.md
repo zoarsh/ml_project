@@ -1,4 +1,4 @@
-# 🧠 360° Children at Risk — Predicting Improvement
+# 360° Children at Risk — Predicting Improvement
 
 ### 🎯 Goal
 Develop a **supervised machine learning model** that predicts improvement among children participating in Israel’s **360° National Program for Children and Youth at Risk**, supporting **early identification of children unlikely to improve** (Recall₀ priority for preventive intervention).
