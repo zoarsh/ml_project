@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0147)file:///C:/Users/zoars/Desktop/Data%20Science/machine%20learning/ML_PROJECT/360%20project/my_ml_project/reports/figures/map_yishuv_top_area_m2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <script src="./map_yishuv_top_area_m2_files/leaflet.js.הורדה"></script>
+    <script src="./map_yishuv_top_area_m2_files/jquery-3.7.1.min.js.הורדה"></script>
+    <script src="./map_yishuv_top_area_m2_files/bootstrap.bundle.min.js.הורדה"></script>
+    <script src="./map_yishuv_top_area_m2_files/leaflet.awesome-markers.js.הורדה"></script>
+    <link rel="stylesheet" href="./map_yishuv_top_area_m2_files/leaflet.css">
+    <link rel="stylesheet" href="./map_yishuv_top_area_m2_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./map_yishuv_top_area_m2_files/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="./map_yishuv_top_area_m2_files/all.min.css">
+    <link rel="stylesheet" href="./map_yishuv_top_area_m2_files/leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="./map_yishuv_top_area_m2_files/leaflet.awesome.rotate.min.css">
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <style>
+                #map_72ed849918bd91d9ffd5644f94fb7526 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style="position: fixed; bottom: 30px; left: 30px; z-index: 9999; background: white; padding: 10px; border: 1px solid #ccc; font-family: Arial;"><b>תחום מוביל ביישוב — מ2</b><br><div><span style="display:inline-block;width:12px;height:12px;background:#2ca02c;margin-left:6px;border:1px solid #999;"></span>פיזי/טיפול (A1)</div><div><span style="display:inline-block;width:12px;height:12px;background:#1f77b4;margin-left:6px;border:1px solid #999;"></span>משפחה (A2)</div><div><span style="display:inline-block;width:12px;height:12px;background:#9467bd;margin-left:6px;border:1px solid #999;"></span>הגנה מאחרים (A3)</div><div><span style="display:inline-block;width:12px;height:12px;background:#ff7f0e;margin-left:6px;border:1px solid #999;"></span>לימודי (A4)</div><div><span style="display:inline-block;width:12px;height:12px;background:#17becf;margin-left:6px;border:1px solid #999;"></span>חברתי (A5)</div><div><span style="display:inline-block;width:12px;height:12px;background:#d62728;margin-left:6px;border:1px solid #999;"></span>רגשי (A6)</div><div><span style="display:inline-block;width:12px;height:12px;background:#8c564b;margin-left:6px;border:1px solid #999;"></span>התנהגויות סיכון (A7)</div></div>
+    <h3 align="center" style="font-size:18px">תחום החיים הבולט ביישוב — מדידה 2</h3>
+    
+            <div class="folium-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" id="map_72ed849918bd91d9ffd5644f94fb7526" tabindex="0" style="outline: none;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 20; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="./map_yishuv_top_area_m2_files/103.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(725px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/103(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(981px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/104.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(725px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/104(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(981px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/102.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(725px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/102(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(981px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/103(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(469px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/103(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1237px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/104(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(469px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/104(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1237px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/105.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(725px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/105(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(981px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/102(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(469px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/102(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1237px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/105(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(469px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/105(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1237px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/103(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(213px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/103(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1493px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/104(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(213px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/104(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1493px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/102(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(213px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/102(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1493px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/105(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(213px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/105(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1493px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/103(6).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-43px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/103(7).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1749px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/104(6).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-43px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/104(7).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1749px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/102(6).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-43px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/102(7).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1749px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/105(6).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-43px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_top_area_m2_files/105(7).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1749px, 696px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none" class="leaflet-zoom-animated" width="2286" height="1134" viewBox="-190 -94 2286 1134" style="transform: translate3d(-190px, -94px, 0px);"><g><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M970,319a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M935,419a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M877,473a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M865,501a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M953,339a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M926,454a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M965,494a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M910,411a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M919,565a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M928,336a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M895,456a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M941,405a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M913,473a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M972,229a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M918,359a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M998,243a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M924,411a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M1036,222a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 "></path><path class="leaflet-interactive" stroke="#444" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#ff7f0e" fill-opacity="0.9" fill-rule="evenodd" d="M910,438a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 "></path></g></svg></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="file:///C:/Users/zoars/Desktop/Data%20Science/machine%20learning/ML_PROJECT/360%20project/my_ml_project/reports/figures/map_yishuv_top_area_m2.html#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="file:///C:/Users/zoars/Desktop/Data%20Science/machine%20learning/ML_PROJECT/360%20project/my_ml_project/reports/figures/map_yishuv_top_area_m2.html#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="leaflet-attribution-flag"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a> <span aria-hidden="true">|</span> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a></div></div></div></div>
+        
+
+<script>
+    
+    
+            var map_72ed849918bd91d9ffd5644f94fb7526 = L.map(
+                "map_72ed849918bd91d9ffd5644f94fb7526",
+                {
+                    center: [31.8, 35.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f969161d3aa6423125e57affbfd8cb25 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f969161d3aa6423125e57affbfd8cb25.addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            var circle_marker_4a4db8c5641d8c6ff0dddebc968699cc = L.circleMarker(
+                [32.5158385, 35.152491],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.051520176134536, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_4a4db8c5641d8c6ff0dddebc968699cc.bindTooltip(
+                `<div>
+                     <b>אום אל פאחם</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 78.1%<br>n=489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_078d2649aa321db6cfe514e76663b238 = L.circleMarker(
+                [32.0500659, 34.9521522],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.540133740025425, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_078d2649aa321db6cfe514e76663b238.bindTooltip(
+                `<div>
+                     <b>אלעד</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 78.2%<br>n=353
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09fa808983068530d02ff78806178468 = L.circleMarker(
+                [31.7977314, 34.6529922],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_09fa808983068530d02ff78806178468.bindTooltip(
+                `<div>
+                     <b>אשדוד</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 80.9%<br>n=888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c70f8721f5905f5085b5b271aa63296 = L.circleMarker(
+                [31.6653191, 34.565044],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.727272727272727, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_5c70f8721f5905f5085b5b271aa63296.bindTooltip(
+                `<div>
+                     <b>אשקלון</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 81.3%<br>n=289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bbd78090deaa3f7092780cf413dd1a6 = L.circleMarker(
+                [32.4197144, 35.0428311],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.229988054812211, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_2bbd78090deaa3f7092780cf413dd1a6.bindTooltip(
+                `<div>
+                     <b>באקה אל גרביה</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 76.3%<br>n=253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7da81baf67033bbbf5714acfdeda68d = L.circleMarker(
+                [31.8880132, 34.919009],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_f7da81baf67033bbbf5714acfdeda68d.bindTooltip(
+                `<div>
+                     <b>בית שמש</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 76.8%<br>n=852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_878691dc38e2edfd7645ef0983d3fe29 = L.circleMarker(
+                [31.6989467, 35.1137333],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.925270806437588, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_878691dc38e2edfd7645ef0983d3fe29.bindTooltip(
+                `<div>
+                     <b>ביתר עילית</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 86.5%<br>n=304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71f829ea333cf7baaba6727a491118e9 = L.circleMarker(
+                [32.0873899, 34.8324376],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_71f829ea333cf7baaba6727a491118e9.bindTooltip(
+                `<div>
+                     <b>בני ברק</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 74.7%<br>n=1167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcb6a09c6f41cb9e66451370d3f365e1 = L.circleMarker(
+                [31.3668804, 34.8618054],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.899157816810348, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_fcb6a09c6f41cb9e66451370d3f365e1.bindTooltip(
+                `<div>
+                     <b>גסר אל זרקא</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 72.5%<br>n=302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ddb013b78e0546858c7186ffb9b2364 = L.circleMarker(
+                [32.43699, 34.9198258],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.512931607480157, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_8ddb013b78e0546858c7186ffb9b2364.bindTooltip(
+                `<div>
+                     <b>חדרה</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 80.8%<br>n=438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9ecd6c4775ced87f15e2e762230ea78 = L.circleMarker(
+                [31.8768863, 34.7382974],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.854310631217636, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_a9ecd6c4775ced87f15e2e762230ea78.bindTooltip(
+                `<div>
+                     <b>יבנה</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 75.1%<br>n=470
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a28dcdd84ee8ea01f511ff0b20f10516 = L.circleMarker(
+                [32.1152014, 34.9752609],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.441229792611318, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_a28dcdd84ee8ea01f511ff0b20f10516.bindTooltip(
+                `<div>
+                     <b>כפר קאסם</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 84.3%<br>n=268
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69c54fa0a26c37a4d5a802166046e08f = L.circleMarker(
+                [31.7978401, 34.8216119],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.143742566137141, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_69c54fa0a26c37a4d5a802166046e08f.bindTooltip(
+                `<div>
+                     <b>מטה בנימין</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 74.1%<br>n=247
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_564508d8bc36f39e3d02ddac8ce7abf3 = L.circleMarker(
+                [32.9295345, 35.1467283],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.315216790650491, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_564508d8bc36f39e3d02ddac8ce7abf3.bindTooltip(
+                `<div>
+                     <b>מכר גדידה</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 69.5%<br>n=259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69c9cdb9653ec31952f4fd8cadfb0418 = L.circleMarker(
+                [32.3286181, 34.8566246],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.912225084331459, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_69c9cdb9653ec31952f4fd8cadfb0418.bindTooltip(
+                `<div>
+                     <b>נתניה</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 81.8%<br>n=303
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0886484a5cd611dbd7989643bf7c6e2e = L.circleMarker(
+                [32.8638052, 35.3023184],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.69578591259161, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_0886484a5cd611dbd7989643bf7c6e2e.bindTooltip(
+                `<div>
+                     <b>סכנין</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 67.7%<br>n=455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3de3d5353266fce9f2d428dd6d165a9d = L.circleMarker(
+                [32.0877639, 34.8859985],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.807074562417121, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_3de3d5353266fce9f2d428dd6d165a9d.bindTooltip(
+                `<div>
+                     <b>פתח תקווה</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 75.9%<br>n=295
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e30a60b7d989deaeba373e401e9767e2 = L.circleMarker(
+                [32.9646301, 35.502451],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.7938309997646575, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_e30a60b7d989deaeba373e401e9767e2.bindTooltip(
+                `<div>
+                     <b>צפת</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 69.4%<br>n=294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8fc5853e7120d1603ee95af0487f1b4 = L.circleMarker(
+                [31.9635712, 34.8101149],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.067381522408567, "stroke": true, "weight": 0.5}
+            ).addTo(map_72ed849918bd91d9ffd5644f94fb7526);
+        
+    
+            circle_marker_b8fc5853e7120d1603ee95af0487f1b4.bindTooltip(
+                `<div>
+                     <b>ראשון לציון</b><br>תחום מוביל: לימודי (A4)<br>שיעור: 71.4%<br>n=315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</body></html>

@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<!-- saved from url=(0153)file:///C:/Users/zoars/Desktop/Data%20Science/machine%20learning/ML_PROJECT/360%20project/my_ml_project/reports/figures/map_yishuv_by_area_layers_m2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <script src="./map_yishuv_by_area_layers_m2_files/leaflet.js.הורדה"></script>
+    <script src="./map_yishuv_by_area_layers_m2_files/jquery-3.7.1.min.js.הורדה"></script>
+    <script src="./map_yishuv_by_area_layers_m2_files/bootstrap.bundle.min.js.הורדה"></script>
+    <script src="./map_yishuv_by_area_layers_m2_files/leaflet.awesome-markers.js.הורדה"></script>
+    <link rel="stylesheet" href="./map_yishuv_by_area_layers_m2_files/leaflet.css">
+    <link rel="stylesheet" href="./map_yishuv_by_area_layers_m2_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./map_yishuv_by_area_layers_m2_files/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="./map_yishuv_by_area_layers_m2_files/all.min.css">
+    <link rel="stylesheet" href="./map_yishuv_by_area_layers_m2_files/leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="./map_yishuv_by_area_layers_m2_files/leaflet.awesome.rotate.min.css">
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <style>
+                #map_fb3eb757be0384610821d5e022f2ea77 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<h3 align="center" style="font-size:18px; margin-top:10px;">
+מיפוי תחומי סיכון לפי יישוב — מדידה 2
+</h3>
+<p align="center" style="font-size:13px; margin-top:-6px;">
+כל שכבה מציגה את היישובים שבהם דווחו ילדים עם סיכון בתחום חיים מסוים.
+צבע מייצג את התחום הנבחר, והבהירות מסמנת את עוצמת הדיווחים באותו תחום:
+צבע כהה = שיעור גבוה יותר של ילדים עם סיכון בתחום זה.
+</p>
+    
+            <div class="folium-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" id="map_fb3eb757be0384610821d5e022f2ea77" tabindex="0" style="outline: none;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 20; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="./map_yishuv_by_area_layers_m2_files/103.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(725px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/103(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(981px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/104.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(725px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/104(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(981px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/102.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(725px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/102(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(981px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/103(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(469px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/103(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1237px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/104(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(469px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/104(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1237px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/105.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(725px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/105(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(981px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/102(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(469px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/102(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1237px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/105(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(469px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/105(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1237px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/103(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(213px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/103(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1493px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/104(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(213px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/104(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1493px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/102(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(213px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/102(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1493px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/105(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(213px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/105(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1493px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/103(6).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-43px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/103(7).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1749px, 184px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/104(6).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-43px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/104(7).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1749px, 440px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/102(6).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-43px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/102(7).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1749px, -72px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/105(6).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-43px, 696px, 0px); opacity: 1;"><img alt="" src="./map_yishuv_by_area_layers_m2_files/105(7).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1749px, 696px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none" class="leaflet-zoom-animated" width="2286" height="1134" viewBox="-190 -94 2286 1134" style="transform: translate3d(-190px, -94px, 0px);"><g><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M973,319a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M937,419a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M882,473a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.85" fill-rule="evenodd" d="M866,501a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M953,339a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M931,454a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.85" fill-rule="evenodd" d="M966,494a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M915,411a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M920,565a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M931,336a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M898,456a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.85" fill-rule="evenodd" d="M941,405a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M913,473a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M972,229a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.85" fill-rule="evenodd" d="M919,359a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M1001,243a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M925,411a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M1037,222a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path><path class="leaflet-interactive" stroke="#333333" stroke-opacity="1" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#d62728" fill-opacity="0.5" fill-rule="evenodd" d="M911,438a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 "></path></g></svg></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="file:///C:/Users/zoars/Desktop/Data%20Science/machine%20learning/ML_PROJECT/360%20project/my_ml_project/reports/figures/map_yishuv_by_area_layers_m2.html#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="file:///C:/Users/zoars/Desktop/Data%20Science/machine%20learning/ML_PROJECT/360%20project/my_ml_project/reports/figures/map_yishuv_by_area_layers_m2.html#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a></div></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-layers leaflet-control-layers-expanded leaflet-control" aria-haspopup="true"><a class="leaflet-control-layers-toggle" href="file:///C:/Users/zoars/Desktop/Data%20Science/machine%20learning/ML_PROJECT/360%20project/my_ml_project/reports/figures/map_yishuv_by_area_layers_m2.html#" title="Layers" role="button"></a><section class="leaflet-control-layers-list"><div class="leaflet-control-layers-base"><label><span><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_231" checked="checked"><span> cartodbpositron</span></span></label></div><div class="leaflet-control-layers-separator"></div><div class="leaflet-control-layers-overlays"><label><span><input type="checkbox" class="leaflet-control-layers-selector"><span> פיזי/טיפול (A1)</span></span></label><label><span><input type="checkbox" class="leaflet-control-layers-selector"><span> משפחה (A2)</span></span></label><label><span><input type="checkbox" class="leaflet-control-layers-selector"><span> הגנה מאחרים (A3)</span></span></label><label><span><input type="checkbox" class="leaflet-control-layers-selector"><span> לימודי (A4)</span></span></label><label><span><input type="checkbox" class="leaflet-control-layers-selector"><span> חברתי (A5)</span></span></label><label><span><input type="checkbox" class="leaflet-control-layers-selector"><span> רגשי (A6)</span></span></label><label><span><input type="checkbox" class="leaflet-control-layers-selector"><span> התנהגויות סיכון (A7)</span></span></label></div></section></div></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="leaflet-attribution-flag"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a> <span aria-hidden="true">|</span> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a></div></div></div></div>
+        
+
+<script>
+    
+    
+            var map_fb3eb757be0384610821d5e022f2ea77 = L.map(
+                "map_fb3eb757be0384610821d5e022f2ea77",
+                {
+                    center: [31.8, 35.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5afbb6a4a377ce5da4b5aebb7ad4c820 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5afbb6a4a377ce5da4b5aebb7ad4c820.addTo(map_fb3eb757be0384610821d5e022f2ea77);
+        
+    
+            var feature_group_0a714d84bb67d59e458f96973d135ce9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_7642892fbe141e9996ad1eb9bee9c540 = L.circleMarker(
+                [32.5158385, 35.152491],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_7642892fbe141e9996ad1eb9bee9c540.bindTooltip(
+                `<div>
+                     <b>אום אל פאחם</b><br>שיעור בתחום: 34.4%<br>מספר ילדים (n): 489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2384dcafeb6c6ca29ac9b22eb8492ea7 = L.circleMarker(
+                [32.0500659, 34.9521522],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_2384dcafeb6c6ca29ac9b22eb8492ea7.bindTooltip(
+                `<div>
+                     <b>אלעד</b><br>שיעור בתחום: 5.9%<br>מספר ילדים (n): 353
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0cb2919af12db7c15fba4062b6bcca1 = L.circleMarker(
+                [31.7977314, 34.6529922],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_b0cb2919af12db7c15fba4062b6bcca1.bindTooltip(
+                `<div>
+                     <b>אשדוד</b><br>שיעור בתחום: 12.2%<br>מספר ילדים (n): 888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68110815f7eca451a3760611cdf0cffd = L.circleMarker(
+                [31.6653191, 34.565044],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_68110815f7eca451a3760611cdf0cffd.bindTooltip(
+                `<div>
+                     <b>אשקלון</b><br>שיעור בתחום: 30.4%<br>מספר ילדים (n): 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_607c8fa5974de0ee4ba8f7eb155505a6 = L.circleMarker(
+                [32.4197144, 35.0428311],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_607c8fa5974de0ee4ba8f7eb155505a6.bindTooltip(
+                `<div>
+                     <b>באקה אל גרביה</b><br>שיעור בתחום: 31.6%<br>מספר ילדים (n): 253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_effa37ef9b77e6ecac3f0f955bd102a1 = L.circleMarker(
+                [31.8880132, 34.919009],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_effa37ef9b77e6ecac3f0f955bd102a1.bindTooltip(
+                `<div>
+                     <b>בית שמש</b><br>שיעור בתחום: 23.2%<br>מספר ילדים (n): 852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c01ec53903a410b4ab497d3777180b2c = L.circleMarker(
+                [31.6989467, 35.1137333],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_c01ec53903a410b4ab497d3777180b2c.bindTooltip(
+                `<div>
+                     <b>ביתר עילית</b><br>שיעור בתחום: 65.5%<br>מספר ילדים (n): 304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbd8f81aa1514bbe65f44f1b2dcd88f0 = L.circleMarker(
+                [32.0873899, 34.8324376],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_dbd8f81aa1514bbe65f44f1b2dcd88f0.bindTooltip(
+                `<div>
+                     <b>בני ברק</b><br>שיעור בתחום: 17.2%<br>מספר ילדים (n): 1167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a257d6d7067925a1e73f9c1a3b2a2673 = L.circleMarker(
+                [31.3668804, 34.8618054],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_a257d6d7067925a1e73f9c1a3b2a2673.bindTooltip(
+                `<div>
+                     <b>גסר אל זרקא</b><br>שיעור בתחום: 33.8%<br>מספר ילדים (n): 302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b8ab96aac153bc95094da3e2e746770 = L.circleMarker(
+                [32.43699, 34.9198258],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_7b8ab96aac153bc95094da3e2e746770.bindTooltip(
+                `<div>
+                     <b>חדרה</b><br>שיעור בתחום: 29.5%<br>מספר ילדים (n): 438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_795ecad5a4e6e0ef540df067b3d8ac4f = L.circleMarker(
+                [31.8768863, 34.7382974],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_795ecad5a4e6e0ef540df067b3d8ac4f.bindTooltip(
+                `<div>
+                     <b>יבנה</b><br>שיעור בתחום: 18.7%<br>מספר ילדים (n): 470
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac33740381718e047bc463c31db8f2f4 = L.circleMarker(
+                [32.1152014, 34.9752609],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_ac33740381718e047bc463c31db8f2f4.bindTooltip(
+                `<div>
+                     <b>כפר קאסם</b><br>שיעור בתחום: 34.0%<br>מספר ילדים (n): 268
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72e4608a22ba57502e177e085b971222 = L.circleMarker(
+                [31.7978401, 34.8216119],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_72e4608a22ba57502e177e085b971222.bindTooltip(
+                `<div>
+                     <b>מטה בנימין</b><br>שיעור בתחום: 17.0%<br>מספר ילדים (n): 247
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c00397b77368c9b5058144b03585b4c = L.circleMarker(
+                [32.9295345, 35.1467283],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_2c00397b77368c9b5058144b03585b4c.bindTooltip(
+                `<div>
+                     <b>מכר גדידה</b><br>שיעור בתחום: 24.7%<br>מספר ילדים (n): 259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e7b6a69ce679de7e68158ec2d47c3556 = L.circleMarker(
+                [32.3286181, 34.8566246],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_e7b6a69ce679de7e68158ec2d47c3556.bindTooltip(
+                `<div>
+                     <b>נתניה</b><br>שיעור בתחום: 31.4%<br>מספר ילדים (n): 303
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_156c99502dfb41b07fcc88f0d6687725 = L.circleMarker(
+                [32.8638052, 35.3023184],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_156c99502dfb41b07fcc88f0d6687725.bindTooltip(
+                `<div>
+                     <b>סכנין</b><br>שיעור בתחום: 29.5%<br>מספר ילדים (n): 455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf0f965a0863b1f14fd4910bbd627d36 = L.circleMarker(
+                [32.0877639, 34.8859985],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_cf0f965a0863b1f14fd4910bbd627d36.bindTooltip(
+                `<div>
+                     <b>פתח תקווה</b><br>שיעור בתחום: 25.8%<br>מספר ילדים (n): 295
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96556352684668058b3c52e190a9f3cf = L.circleMarker(
+                [32.9646301, 35.502451],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_96556352684668058b3c52e190a9f3cf.bindTooltip(
+                `<div>
+                     <b>צפת</b><br>שיעור בתחום: 22.4%<br>מספר ילדים (n): 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29db2b53c7985624a8b8d2793740531c = L.circleMarker(
+                [31.9635712, 34.8101149],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_0a714d84bb67d59e458f96973d135ce9);
+        
+    
+            circle_marker_29db2b53c7985624a8b8d2793740531c.bindTooltip(
+                `<div>
+                     <b>ראשון לציון</b><br>שיעור בתחום: 21.9%<br>מספר ילדים (n): 315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_429f79f6289f98ba0db6f6707a9ce174 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_daddb30c449141d343f291824056b70f = L.circleMarker(
+                [32.5158385, 35.152491],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_daddb30c449141d343f291824056b70f.bindTooltip(
+                `<div>
+                     <b>אום אל פאחם</b><br>שיעור בתחום: 39.1%<br>מספר ילדים (n): 489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42682fff3c5554f6a1bae151124d826e = L.circleMarker(
+                [32.0500659, 34.9521522],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_42682fff3c5554f6a1bae151124d826e.bindTooltip(
+                `<div>
+                     <b>אלעד</b><br>שיעור בתחום: 15.0%<br>מספר ילדים (n): 353
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d38df4e3771dd1874d622fef4b0fdf45 = L.circleMarker(
+                [31.7977314, 34.6529922],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_d38df4e3771dd1874d622fef4b0fdf45.bindTooltip(
+                `<div>
+                     <b>אשדוד</b><br>שיעור בתחום: 33.8%<br>מספר ילדים (n): 888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0beb84ac61a8b352f6f095c4336ee6f9 = L.circleMarker(
+                [31.6653191, 34.565044],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_0beb84ac61a8b352f6f095c4336ee6f9.bindTooltip(
+                `<div>
+                     <b>אשקלון</b><br>שיעור בתחום: 51.6%<br>מספר ילדים (n): 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10f375c58f5e48d16c210311402b2f0e = L.circleMarker(
+                [32.4197144, 35.0428311],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_10f375c58f5e48d16c210311402b2f0e.bindTooltip(
+                `<div>
+                     <b>באקה אל גרביה</b><br>שיעור בתחום: 47.0%<br>מספר ילדים (n): 253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5bfec1152f41e46e3bd3b9d30d6e64b = L.circleMarker(
+                [31.8880132, 34.919009],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_e5bfec1152f41e46e3bd3b9d30d6e64b.bindTooltip(
+                `<div>
+                     <b>בית שמש</b><br>שיעור בתחום: 25.8%<br>מספר ילדים (n): 852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3967ed4f703d6be36011675844594632 = L.circleMarker(
+                [31.6989467, 35.1137333],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_3967ed4f703d6be36011675844594632.bindTooltip(
+                `<div>
+                     <b>ביתר עילית</b><br>שיעור בתחום: 76.6%<br>מספר ילדים (n): 304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44b289447799ac4d390e8a7290a3133a = L.circleMarker(
+                [32.0873899, 34.8324376],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_44b289447799ac4d390e8a7290a3133a.bindTooltip(
+                `<div>
+                     <b>בני ברק</b><br>שיעור בתחום: 31.1%<br>מספר ילדים (n): 1167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7783e5aed0f550ea15231eb4c5d0b72d = L.circleMarker(
+                [31.3668804, 34.8618054],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_7783e5aed0f550ea15231eb4c5d0b72d.bindTooltip(
+                `<div>
+                     <b>גסר אל זרקא</b><br>שיעור בתחום: 39.7%<br>מספר ילדים (n): 302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_742d121183752a402e03592f14650e43 = L.circleMarker(
+                [32.43699, 34.9198258],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_742d121183752a402e03592f14650e43.bindTooltip(
+                `<div>
+                     <b>חדרה</b><br>שיעור בתחום: 41.3%<br>מספר ילדים (n): 438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b304b15af38f139101b5c5fbada62f6 = L.circleMarker(
+                [31.8768863, 34.7382974],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_9b304b15af38f139101b5c5fbada62f6.bindTooltip(
+                `<div>
+                     <b>יבנה</b><br>שיעור בתחום: 44.7%<br>מספר ילדים (n): 470
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0dbb80846c78d9069a82057d8244001 = L.circleMarker(
+                [32.1152014, 34.9752609],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_a0dbb80846c78d9069a82057d8244001.bindTooltip(
+                `<div>
+                     <b>כפר קאסם</b><br>שיעור בתחום: 44.0%<br>מספר ילדים (n): 268
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11007726561debbbf78337240bcf6130 = L.circleMarker(
+                [31.7978401, 34.8216119],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_11007726561debbbf78337240bcf6130.bindTooltip(
+                `<div>
+                     <b>מטה בנימין</b><br>שיעור בתחום: 28.7%<br>מספר ילדים (n): 247
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ddfa607db9a19e71afdb9f8929859a23 = L.circleMarker(
+                [32.9295345, 35.1467283],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_ddfa607db9a19e71afdb9f8929859a23.bindTooltip(
+                `<div>
+                     <b>מכר גדידה</b><br>שיעור בתחום: 50.6%<br>מספר ילדים (n): 259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b55596b973677e18ce05d3f8cb957bd = L.circleMarker(
+                [32.3286181, 34.8566246],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_4b55596b973677e18ce05d3f8cb957bd.bindTooltip(
+                `<div>
+                     <b>נתניה</b><br>שיעור בתחום: 56.4%<br>מספר ילדים (n): 303
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_148181a210a89e6d20a970f75829f1fd = L.circleMarker(
+                [32.8638052, 35.3023184],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_148181a210a89e6d20a970f75829f1fd.bindTooltip(
+                `<div>
+                     <b>סכנין</b><br>שיעור בתחום: 47.5%<br>מספר ילדים (n): 455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6986e8c84418fbb2a2b1e56586b33a0 = L.circleMarker(
+                [32.0877639, 34.8859985],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_c6986e8c84418fbb2a2b1e56586b33a0.bindTooltip(
+                `<div>
+                     <b>פתח תקווה</b><br>שיעור בתחום: 56.3%<br>מספר ילדים (n): 295
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d38dfda07cacd5da1ae01e50ad98eeb9 = L.circleMarker(
+                [32.9646301, 35.502451],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_d38dfda07cacd5da1ae01e50ad98eeb9.bindTooltip(
+                `<div>
+                     <b>צפת</b><br>שיעור בתחום: 43.5%<br>מספר ילדים (n): 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a62318231f4bfe71251a1400880844a5 = L.circleMarker(
+                [31.9635712, 34.8101149],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_429f79f6289f98ba0db6f6707a9ce174);
+        
+    
+            circle_marker_a62318231f4bfe71251a1400880844a5.bindTooltip(
+                `<div>
+                     <b>ראשון לציון</b><br>שיעור בתחום: 44.4%<br>מספר ילדים (n): 315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_d5ed1250b09057367c7944982bd175d0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_a53ef46455ba03da67b0332945dfb90a = L.circleMarker(
+                [32.5158385, 35.152491],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_a53ef46455ba03da67b0332945dfb90a.bindTooltip(
+                `<div>
+                     <b>אום אל פאחם</b><br>שיעור בתחום: 21.1%<br>מספר ילדים (n): 489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f8b9f6cfb3d3ddf1a9de814759d1dcca = L.circleMarker(
+                [32.0500659, 34.9521522],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_f8b9f6cfb3d3ddf1a9de814759d1dcca.bindTooltip(
+                `<div>
+                     <b>אלעד</b><br>שיעור בתחום: 4.5%<br>מספר ילדים (n): 353
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5850d2a8667beb6e8e875ff2539c8ea = L.circleMarker(
+                [31.7977314, 34.6529922],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_f5850d2a8667beb6e8e875ff2539c8ea.bindTooltip(
+                `<div>
+                     <b>אשדוד</b><br>שיעור בתחום: 4.3%<br>מספר ילדים (n): 888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af6704cd89a3c308abed419b9bbd8cd3 = L.circleMarker(
+                [31.6653191, 34.565044],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_af6704cd89a3c308abed419b9bbd8cd3.bindTooltip(
+                `<div>
+                     <b>אשקלון</b><br>שיעור בתחום: 15.9%<br>מספר ילדים (n): 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_477793483c3b5c012420adaf651e648c = L.circleMarker(
+                [32.4197144, 35.0428311],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_477793483c3b5c012420adaf651e648c.bindTooltip(
+                `<div>
+                     <b>באקה אל גרביה</b><br>שיעור בתחום: 21.3%<br>מספר ילדים (n): 253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01b49ea37291a946d64795aabde5e5ab = L.circleMarker(
+                [31.8880132, 34.919009],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_01b49ea37291a946d64795aabde5e5ab.bindTooltip(
+                `<div>
+                     <b>בית שמש</b><br>שיעור בתחום: 9.6%<br>מספר ילדים (n): 852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc542e4b720fa19175e8791edacb51b6 = L.circleMarker(
+                [31.6989467, 35.1137333],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_cc542e4b720fa19175e8791edacb51b6.bindTooltip(
+                `<div>
+                     <b>ביתר עילית</b><br>שיעור בתחום: 34.5%<br>מספר ילדים (n): 304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cb7453022e207140812a1657144053c = L.circleMarker(
+                [32.0873899, 34.8324376],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_2cb7453022e207140812a1657144053c.bindTooltip(
+                `<div>
+                     <b>בני ברק</b><br>שיעור בתחום: 7.2%<br>מספר ילדים (n): 1167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3b08c5eef9b00082e592173986dcdc1 = L.circleMarker(
+                [31.3668804, 34.8618054],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_f3b08c5eef9b00082e592173986dcdc1.bindTooltip(
+                `<div>
+                     <b>גסר אל זרקא</b><br>שיעור בתחום: 8.3%<br>מספר ילדים (n): 302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b23a001eb975476e889e2082c93ef02 = L.circleMarker(
+                [32.43699, 34.9198258],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_7b23a001eb975476e889e2082c93ef02.bindTooltip(
+                `<div>
+                     <b>חדרה</b><br>שיעור בתחום: 7.8%<br>מספר ילדים (n): 438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9602f04cce955dbbdfe87be5d5f6179c = L.circleMarker(
+                [31.8768863, 34.7382974],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_9602f04cce955dbbdfe87be5d5f6179c.bindTooltip(
+                `<div>
+                     <b>יבנה</b><br>שיעור בתחום: 14.3%<br>מספר ילדים (n): 470
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b88d4e3d32c500338f30bd0299c54bd4 = L.circleMarker(
+                [32.1152014, 34.9752609],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_b88d4e3d32c500338f30bd0299c54bd4.bindTooltip(
+                `<div>
+                     <b>כפר קאסם</b><br>שיעור בתחום: 32.5%<br>מספר ילדים (n): 268
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7edb0e1ff44274014369dc4883dae942 = L.circleMarker(
+                [31.7978401, 34.8216119],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_7edb0e1ff44274014369dc4883dae942.bindTooltip(
+                `<div>
+                     <b>מטה בנימין</b><br>שיעור בתחום: 9.3%<br>מספר ילדים (n): 247
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9b045cc0d89aa194c77184b58e14d4c = L.circleMarker(
+                [32.9295345, 35.1467283],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_e9b045cc0d89aa194c77184b58e14d4c.bindTooltip(
+                `<div>
+                     <b>מכר גדידה</b><br>שיעור בתחום: 17.8%<br>מספר ילדים (n): 259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9eb543475473b84a082072cbdb78c78 = L.circleMarker(
+                [32.3286181, 34.8566246],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_b9eb543475473b84a082072cbdb78c78.bindTooltip(
+                `<div>
+                     <b>נתניה</b><br>שיעור בתחום: 18.8%<br>מספר ילדים (n): 303
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ea80109ec7e396d04476894983030e8 = L.circleMarker(
+                [32.8638052, 35.3023184],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_9ea80109ec7e396d04476894983030e8.bindTooltip(
+                `<div>
+                     <b>סכנין</b><br>שיעור בתחום: 23.7%<br>מספר ילדים (n): 455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c208d2e20b589fc989e9ddef336f8fcc = L.circleMarker(
+                [32.0877639, 34.8859985],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_c208d2e20b589fc989e9ddef336f8fcc.bindTooltip(
+                `<div>
+                     <b>פתח תקווה</b><br>שיעור בתחום: 15.3%<br>מספר ילדים (n): 295
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a1f842d2c8a3dd2803359665a0c3919 = L.circleMarker(
+                [32.9646301, 35.502451],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_5a1f842d2c8a3dd2803359665a0c3919.bindTooltip(
+                `<div>
+                     <b>צפת</b><br>שיעור בתחום: 18.4%<br>מספר ילדים (n): 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_408d7eeba6cae25541e31eec02e73a22 = L.circleMarker(
+                [31.9635712, 34.8101149],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_d5ed1250b09057367c7944982bd175d0);
+        
+    
+            circle_marker_408d7eeba6cae25541e31eec02e73a22.bindTooltip(
+                `<div>
+                     <b>ראשון לציון</b><br>שיעור בתחום: 7.6%<br>מספר ילדים (n): 315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_202005c3a8d99bf293af13fa91009ad4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_b579559b348599f91a53f3a7100c482d = L.circleMarker(
+                [32.5158385, 35.152491],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_b579559b348599f91a53f3a7100c482d.bindTooltip(
+                `<div>
+                     <b>אום אל פאחם</b><br>שיעור בתחום: 78.1%<br>מספר ילדים (n): 489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e89b1e29f6fc841d9a95c5aed5bf013 = L.circleMarker(
+                [32.0500659, 34.9521522],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_8e89b1e29f6fc841d9a95c5aed5bf013.bindTooltip(
+                `<div>
+                     <b>אלעד</b><br>שיעור בתחום: 78.2%<br>מספר ילדים (n): 353
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e64ab71989218aa127fed0c4f7e34fdf = L.circleMarker(
+                [31.7977314, 34.6529922],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_e64ab71989218aa127fed0c4f7e34fdf.bindTooltip(
+                `<div>
+                     <b>אשדוד</b><br>שיעור בתחום: 80.9%<br>מספר ילדים (n): 888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c390abc9296e2941a5abf96c0a57990f = L.circleMarker(
+                [31.6653191, 34.565044],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_c390abc9296e2941a5abf96c0a57990f.bindTooltip(
+                `<div>
+                     <b>אשקלון</b><br>שיעור בתחום: 81.3%<br>מספר ילדים (n): 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a738904b389062e84f9ddd480d9778f5 = L.circleMarker(
+                [32.4197144, 35.0428311],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_a738904b389062e84f9ddd480d9778f5.bindTooltip(
+                `<div>
+                     <b>באקה אל גרביה</b><br>שיעור בתחום: 76.3%<br>מספר ילדים (n): 253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a5d52181678739accda7c1f9be78a3e = L.circleMarker(
+                [31.8880132, 34.919009],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_7a5d52181678739accda7c1f9be78a3e.bindTooltip(
+                `<div>
+                     <b>בית שמש</b><br>שיעור בתחום: 76.8%<br>מספר ילדים (n): 852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5aedcfdc47cbf82e72aaf1023fa04199 = L.circleMarker(
+                [31.6989467, 35.1137333],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_5aedcfdc47cbf82e72aaf1023fa04199.bindTooltip(
+                `<div>
+                     <b>ביתר עילית</b><br>שיעור בתחום: 86.5%<br>מספר ילדים (n): 304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b59fcce96ef89d0a7ed8fd575b30254 = L.circleMarker(
+                [32.0873899, 34.8324376],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_6b59fcce96ef89d0a7ed8fd575b30254.bindTooltip(
+                `<div>
+                     <b>בני ברק</b><br>שיעור בתחום: 74.7%<br>מספר ילדים (n): 1167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7936958a5f816dded64e32940faa7988 = L.circleMarker(
+                [31.3668804, 34.8618054],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_7936958a5f816dded64e32940faa7988.bindTooltip(
+                `<div>
+                     <b>גסר אל זרקא</b><br>שיעור בתחום: 72.5%<br>מספר ילדים (n): 302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3eb18006a752513107fd065ab3dc451 = L.circleMarker(
+                [32.43699, 34.9198258],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_f3eb18006a752513107fd065ab3dc451.bindTooltip(
+                `<div>
+                     <b>חדרה</b><br>שיעור בתחום: 80.8%<br>מספר ילדים (n): 438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6dc6d2a7dfba92874f59aa98c20d632f = L.circleMarker(
+                [31.8768863, 34.7382974],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_6dc6d2a7dfba92874f59aa98c20d632f.bindTooltip(
+                `<div>
+                     <b>יבנה</b><br>שיעור בתחום: 75.1%<br>מספר ילדים (n): 470
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0b780ba9a08af1ac475820372e4d048 = L.circleMarker(
+                [32.1152014, 34.9752609],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_a0b780ba9a08af1ac475820372e4d048.bindTooltip(
+                `<div>
+                     <b>כפר קאסם</b><br>שיעור בתחום: 84.3%<br>מספר ילדים (n): 268
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9585468a2fa397c9e6e869040756a7c0 = L.circleMarker(
+                [31.7978401, 34.8216119],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_9585468a2fa397c9e6e869040756a7c0.bindTooltip(
+                `<div>
+                     <b>מטה בנימין</b><br>שיעור בתחום: 74.1%<br>מספר ילדים (n): 247
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c6b91d20f23c7e5ab93f17b47fc0360 = L.circleMarker(
+                [32.9295345, 35.1467283],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_2c6b91d20f23c7e5ab93f17b47fc0360.bindTooltip(
+                `<div>
+                     <b>מכר גדידה</b><br>שיעור בתחום: 69.5%<br>מספר ילדים (n): 259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_efcdeaa5f9d7d774934e008b8804fec6 = L.circleMarker(
+                [32.3286181, 34.8566246],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_efcdeaa5f9d7d774934e008b8804fec6.bindTooltip(
+                `<div>
+                     <b>נתניה</b><br>שיעור בתחום: 81.8%<br>מספר ילדים (n): 303
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d030b5781a3f02b624a2d280dc0b01c = L.circleMarker(
+                [32.8638052, 35.3023184],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_1d030b5781a3f02b624a2d280dc0b01c.bindTooltip(
+                `<div>
+                     <b>סכנין</b><br>שיעור בתחום: 67.7%<br>מספר ילדים (n): 455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4647774a5cdbaf823b722cb1bd64e63 = L.circleMarker(
+                [32.0877639, 34.8859985],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_f4647774a5cdbaf823b722cb1bd64e63.bindTooltip(
+                `<div>
+                     <b>פתח תקווה</b><br>שיעור בתחום: 75.9%<br>מספר ילדים (n): 295
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_faea0cfacee8da0ab3fce97fe972f1bb = L.circleMarker(
+                [32.9646301, 35.502451],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_faea0cfacee8da0ab3fce97fe972f1bb.bindTooltip(
+                `<div>
+                     <b>צפת</b><br>שיעור בתחום: 69.4%<br>מספר ילדים (n): 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d170045d510d70acbcb42a9ef7b50299 = L.circleMarker(
+                [31.9635712, 34.8101149],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_202005c3a8d99bf293af13fa91009ad4);
+        
+    
+            circle_marker_d170045d510d70acbcb42a9ef7b50299.bindTooltip(
+                `<div>
+                     <b>ראשון לציון</b><br>שיעור בתחום: 71.4%<br>מספר ילדים (n): 315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_4172c2fc9929e17960ba16f9cf7e23e2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_7804f8d287fb1e36b8b6fccf54439c95 = L.circleMarker(
+                [32.5158385, 35.152491],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_7804f8d287fb1e36b8b6fccf54439c95.bindTooltip(
+                `<div>
+                     <b>אום אל פאחם</b><br>שיעור בתחום: 33.3%<br>מספר ילדים (n): 489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00470186efd54e0e4ca9f486d456fc44 = L.circleMarker(
+                [32.0500659, 34.9521522],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_00470186efd54e0e4ca9f486d456fc44.bindTooltip(
+                `<div>
+                     <b>אלעד</b><br>שיעור בתחום: 5.7%<br>מספר ילדים (n): 353
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9e171fec1229caf2615b6bc19b913f7 = L.circleMarker(
+                [31.7977314, 34.6529922],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_f9e171fec1229caf2615b6bc19b913f7.bindTooltip(
+                `<div>
+                     <b>אשדוד</b><br>שיעור בתחום: 26.8%<br>מספר ילדים (n): 888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0a53f3828354d502d246583f0e00ef8 = L.circleMarker(
+                [31.6653191, 34.565044],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_b0a53f3828354d502d246583f0e00ef8.bindTooltip(
+                `<div>
+                     <b>אשקלון</b><br>שיעור בתחום: 37.7%<br>מספר ילדים (n): 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d9885029e0eede7a4c968e88cc7264b = L.circleMarker(
+                [32.4197144, 35.0428311],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_7d9885029e0eede7a4c968e88cc7264b.bindTooltip(
+                `<div>
+                     <b>באקה אל גרביה</b><br>שיעור בתחום: 38.7%<br>מספר ילדים (n): 253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9efb0bd3a0062a59694ba757d5becb9d = L.circleMarker(
+                [31.8880132, 34.919009],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_9efb0bd3a0062a59694ba757d5becb9d.bindTooltip(
+                `<div>
+                     <b>בית שמש</b><br>שיעור בתחום: 19.5%<br>מספר ילדים (n): 852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ca6dc61b8a4a9adf1b1ed28dad2c255 = L.circleMarker(
+                [31.6989467, 35.1137333],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_3ca6dc61b8a4a9adf1b1ed28dad2c255.bindTooltip(
+                `<div>
+                     <b>ביתר עילית</b><br>שיעור בתחום: 53.6%<br>מספר ילדים (n): 304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4a8f89756c7ac7e9cc85603152f5cca = L.circleMarker(
+                [32.0873899, 34.8324376],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_e4a8f89756c7ac7e9cc85603152f5cca.bindTooltip(
+                `<div>
+                     <b>בני ברק</b><br>שיעור בתחום: 35.0%<br>מספר ילדים (n): 1167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a92d0d4530f00382cf0139cb00cd4e98 = L.circleMarker(
+                [31.3668804, 34.8618054],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_a92d0d4530f00382cf0139cb00cd4e98.bindTooltip(
+                `<div>
+                     <b>גסר אל זרקא</b><br>שיעור בתחום: 20.2%<br>מספר ילדים (n): 302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f757bbdf2ebacda048868d796a7f07b = L.circleMarker(
+                [32.43699, 34.9198258],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_6f757bbdf2ebacda048868d796a7f07b.bindTooltip(
+                `<div>
+                     <b>חדרה</b><br>שיעור בתחום: 37.0%<br>מספר ילדים (n): 438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1213ef4c09686657de9fb67e75d0e30 = L.circleMarker(
+                [31.8768863, 34.7382974],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_a1213ef4c09686657de9fb67e75d0e30.bindTooltip(
+                `<div>
+                     <b>יבנה</b><br>שיעור בתחום: 47.0%<br>מספר ילדים (n): 470
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9e46c2275fb20d74427c1799eaf9351 = L.circleMarker(
+                [32.1152014, 34.9752609],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_c9e46c2275fb20d74427c1799eaf9351.bindTooltip(
+                `<div>
+                     <b>כפר קאסם</b><br>שיעור בתחום: 47.8%<br>מספר ילדים (n): 268
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9505b1376d4d9c1a784c36edc4157c3 = L.circleMarker(
+                [31.7978401, 34.8216119],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_d9505b1376d4d9c1a784c36edc4157c3.bindTooltip(
+                `<div>
+                     <b>מטה בנימין</b><br>שיעור בתחום: 27.9%<br>מספר ילדים (n): 247
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94c1f51255c655972eb9cd4e690a3ba8 = L.circleMarker(
+                [32.9295345, 35.1467283],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_94c1f51255c655972eb9cd4e690a3ba8.bindTooltip(
+                `<div>
+                     <b>מכר גדידה</b><br>שיעור בתחום: 37.1%<br>מספר ילדים (n): 259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4748f30edaf38a0688079a59346887e = L.circleMarker(
+                [32.3286181, 34.8566246],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_b4748f30edaf38a0688079a59346887e.bindTooltip(
+                `<div>
+                     <b>נתניה</b><br>שיעור בתחום: 41.3%<br>מספר ילדים (n): 303
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db715ccb986665a6ee52c10f27885e66 = L.circleMarker(
+                [32.8638052, 35.3023184],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_db715ccb986665a6ee52c10f27885e66.bindTooltip(
+                `<div>
+                     <b>סכנין</b><br>שיעור בתחום: 42.9%<br>מספר ילדים (n): 455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_623bc2d128e7516d409e8ae818c59612 = L.circleMarker(
+                [32.0877639, 34.8859985],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_623bc2d128e7516d409e8ae818c59612.bindTooltip(
+                `<div>
+                     <b>פתח תקווה</b><br>שיעור בתחום: 45.1%<br>מספר ילדים (n): 295
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f9f74e647d62b0fba159a5869a200a6 = L.circleMarker(
+                [32.9646301, 35.502451],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_8f9f74e647d62b0fba159a5869a200a6.bindTooltip(
+                `<div>
+                     <b>צפת</b><br>שיעור בתחום: 43.9%<br>מספר ילדים (n): 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed9aef9fd94a9d752930c9a4f84e6cfc = L.circleMarker(
+                [31.9635712, 34.8101149],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_4172c2fc9929e17960ba16f9cf7e23e2);
+        
+    
+            circle_marker_ed9aef9fd94a9d752930c9a4f84e6cfc.bindTooltip(
+                `<div>
+                     <b>ראשון לציון</b><br>שיעור בתחום: 33.3%<br>מספר ילדים (n): 315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_7f484d08fcc07def33c9f578036132bb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_cc752f4e808340abfb2f9efbb89a7803 = L.circleMarker(
+                [32.5158385, 35.152491],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_cc752f4e808340abfb2f9efbb89a7803.bindTooltip(
+                `<div>
+                     <b>אום אל פאחם</b><br>שיעור בתחום: 38.7%<br>מספר ילדים (n): 489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_214d5520dd1bfa950d0f806077675538 = L.circleMarker(
+                [32.0500659, 34.9521522],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_214d5520dd1bfa950d0f806077675538.bindTooltip(
+                `<div>
+                     <b>אלעד</b><br>שיעור בתחום: 12.7%<br>מספר ילדים (n): 353
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25ea9de0d7f730df612c1edef1ec1847 = L.circleMarker(
+                [31.7977314, 34.6529922],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_25ea9de0d7f730df612c1edef1ec1847.bindTooltip(
+                `<div>
+                     <b>אשדוד</b><br>שיעור בתחום: 49.7%<br>מספר ילדים (n): 888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a315359d5f1039851f44eed4614b9bd6 = L.circleMarker(
+                [31.6653191, 34.565044],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_a315359d5f1039851f44eed4614b9bd6.bindTooltip(
+                `<div>
+                     <b>אשקלון</b><br>שיעור בתחום: 56.4%<br>מספר ילדים (n): 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1fe9b695341c4d9e2bde8d1d32da832 = L.circleMarker(
+                [32.4197144, 35.0428311],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_e1fe9b695341c4d9e2bde8d1d32da832.bindTooltip(
+                `<div>
+                     <b>באקה אל גרביה</b><br>שיעור בתחום: 47.4%<br>מספר ילדים (n): 253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a2d639211f9791cee136cc9ad605efe = L.circleMarker(
+                [31.8880132, 34.919009],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_0a2d639211f9791cee136cc9ad605efe.bindTooltip(
+                `<div>
+                     <b>בית שמש</b><br>שיעור בתחום: 27.9%<br>מספר ילדים (n): 852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6dc0527047c9e69fe109aac07f7b740f = L.circleMarker(
+                [31.6989467, 35.1137333],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_6dc0527047c9e69fe109aac07f7b740f.bindTooltip(
+                `<div>
+                     <b>ביתר עילית</b><br>שיעור בתחום: 73.7%<br>מספר ילדים (n): 304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60740cf0a58a641b883a36b49bb92e5c = L.circleMarker(
+                [32.0873899, 34.8324376],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_60740cf0a58a641b883a36b49bb92e5c.bindTooltip(
+                `<div>
+                     <b>בני ברק</b><br>שיעור בתחום: 47.9%<br>מספר ילדים (n): 1167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_750e0e8016cd877468d662be23b22340 = L.circleMarker(
+                [31.3668804, 34.8618054],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_750e0e8016cd877468d662be23b22340.bindTooltip(
+                `<div>
+                     <b>גסר אל זרקא</b><br>שיעור בתחום: 33.8%<br>מספר ילדים (n): 302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ff8c7ab2bbeb14cb7ae0e498d08070d = L.circleMarker(
+                [32.43699, 34.9198258],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_9ff8c7ab2bbeb14cb7ae0e498d08070d.bindTooltip(
+                `<div>
+                     <b>חדרה</b><br>שיעור בתחום: 49.3%<br>מספר ילדים (n): 438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c465d7238ade805ea8c333aafb75e35 = L.circleMarker(
+                [31.8768863, 34.7382974],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_9c465d7238ade805ea8c333aafb75e35.bindTooltip(
+                `<div>
+                     <b>יבנה</b><br>שיעור בתחום: 63.2%<br>מספר ילדים (n): 470
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_123fe87d7918d05add856a7ba49e8263 = L.circleMarker(
+                [32.1152014, 34.9752609],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_123fe87d7918d05add856a7ba49e8263.bindTooltip(
+                `<div>
+                     <b>כפר קאסם</b><br>שיעור בתחום: 51.9%<br>מספר ילדים (n): 268
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea7a1d0a5a2651994861efba69b026f4 = L.circleMarker(
+                [31.7978401, 34.8216119],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_ea7a1d0a5a2651994861efba69b026f4.bindTooltip(
+                `<div>
+                     <b>מטה בנימין</b><br>שיעור בתחום: 37.7%<br>מספר ילדים (n): 247
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26b1bd1af57b31741095b8af045cb4f4 = L.circleMarker(
+                [32.9295345, 35.1467283],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_26b1bd1af57b31741095b8af045cb4f4.bindTooltip(
+                `<div>
+                     <b>מכר גדידה</b><br>שיעור בתחום: 53.3%<br>מספר ילדים (n): 259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab745ca274b493f65897f79ed410dd8f = L.circleMarker(
+                [32.3286181, 34.8566246],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_ab745ca274b493f65897f79ed410dd8f.bindTooltip(
+                `<div>
+                     <b>נתניה</b><br>שיעור בתחום: 65.3%<br>מספר ילדים (n): 303
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69ecc417fed7c5e2b4a7331c3da393ce = L.circleMarker(
+                [32.8638052, 35.3023184],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_69ecc417fed7c5e2b4a7331c3da393ce.bindTooltip(
+                `<div>
+                     <b>סכנין</b><br>שיעור בתחום: 48.6%<br>מספר ילדים (n): 455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b7fe7b6e2b5afe3f93a4f44512e143d = L.circleMarker(
+                [32.0877639, 34.8859985],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_9b7fe7b6e2b5afe3f93a4f44512e143d.bindTooltip(
+                `<div>
+                     <b>פתח תקווה</b><br>שיעור בתחום: 62.0%<br>מספר ילדים (n): 295
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_392325abe74bf19e605e4f655fd0e180 = L.circleMarker(
+                [32.9646301, 35.502451],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_392325abe74bf19e605e4f655fd0e180.bindTooltip(
+                `<div>
+                     <b>צפת</b><br>שיעור בתחום: 49.3%<br>מספר ילדים (n): 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1c79c153651a334ea3dd3be07d6c517 = L.circleMarker(
+                [31.9635712, 34.8101149],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_7f484d08fcc07def33c9f578036132bb);
+        
+    
+            circle_marker_d1c79c153651a334ea3dd3be07d6c517.bindTooltip(
+                `<div>
+                     <b>ראשון לציון</b><br>שיעור בתחום: 42.2%<br>מספר ילדים (n): 315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_fcc5b1ad6923a7ee9e99729fad406f5f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_ed02638acddce141c273bc9e800cee2b = L.circleMarker(
+                [32.5158385, 35.152491],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_ed02638acddce141c273bc9e800cee2b.bindTooltip(
+                `<div>
+                     <b>אום אל פאחם</b><br>שיעור בתחום: 7.6%<br>מספר ילדים (n): 489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57bbf1fb7a17428bd6054e6a70d08485 = L.circleMarker(
+                [32.0500659, 34.9521522],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_57bbf1fb7a17428bd6054e6a70d08485.bindTooltip(
+                `<div>
+                     <b>אלעד</b><br>שיעור בתחום: 3.1%<br>מספר ילדים (n): 353
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8c65a2096d83659dae07f8075572ed3 = L.circleMarker(
+                [31.7977314, 34.6529922],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_e8c65a2096d83659dae07f8075572ed3.bindTooltip(
+                `<div>
+                     <b>אשדוד</b><br>שיעור בתחום: 6.3%<br>מספר ילדים (n): 888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43a05443033d8ee6fd70163346792557 = L.circleMarker(
+                [31.6653191, 34.565044],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_43a05443033d8ee6fd70163346792557.bindTooltip(
+                `<div>
+                     <b>אשקלון</b><br>שיעור בתחום: 10.7%<br>מספר ילדים (n): 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1266dd35ade551f0dfb6eb8f04234f5 = L.circleMarker(
+                [32.4197144, 35.0428311],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_a1266dd35ade551f0dfb6eb8f04234f5.bindTooltip(
+                `<div>
+                     <b>באקה אל גרביה</b><br>שיעור בתחום: 5.5%<br>מספר ילדים (n): 253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96b6496ffe52c65a2ef6e96f521d6fa5 = L.circleMarker(
+                [31.8880132, 34.919009],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_96b6496ffe52c65a2ef6e96f521d6fa5.bindTooltip(
+                `<div>
+                     <b>בית שמש</b><br>שיעור בתחום: 10.9%<br>מספר ילדים (n): 852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af31f3ceee262fb289ae24cb417e81e3 = L.circleMarker(
+                [31.6989467, 35.1137333],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_af31f3ceee262fb289ae24cb417e81e3.bindTooltip(
+                `<div>
+                     <b>ביתר עילית</b><br>שיעור בתחום: 26.3%<br>מספר ילדים (n): 304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7935c0b52939fa645cc3fd3727d3de17 = L.circleMarker(
+                [32.0873899, 34.8324376],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_7935c0b52939fa645cc3fd3727d3de17.bindTooltip(
+                `<div>
+                     <b>בני ברק</b><br>שיעור בתחום: 3.8%<br>מספר ילדים (n): 1167
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c221540f6d4d95e3a70a03ee7b01db3 = L.circleMarker(
+                [31.3668804, 34.8618054],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_7c221540f6d4d95e3a70a03ee7b01db3.bindTooltip(
+                `<div>
+                     <b>גסר אל זרקא</b><br>שיעור בתחום: 6.0%<br>מספר ילדים (n): 302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c42e76908a0026d721534eee7eb0e2a = L.circleMarker(
+                [32.43699, 34.9198258],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_9c42e76908a0026d721534eee7eb0e2a.bindTooltip(
+                `<div>
+                     <b>חדרה</b><br>שיעור בתחום: 7.8%<br>מספר ילדים (n): 438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60abcbcd9159cc8e557f991bdf9d9934 = L.circleMarker(
+                [31.8768863, 34.7382974],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_60abcbcd9159cc8e557f991bdf9d9934.bindTooltip(
+                `<div>
+                     <b>יבנה</b><br>שיעור בתחום: 13.6%<br>מספר ילדים (n): 470
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c463dd4ad114c0709757961a128855a = L.circleMarker(
+                [32.1152014, 34.9752609],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_6c463dd4ad114c0709757961a128855a.bindTooltip(
+                `<div>
+                     <b>כפר קאסם</b><br>שיעור בתחום: 27.6%<br>מספר ילדים (n): 268
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f36b7c2f7aa2c3804dc6ada2ecb4df1 = L.circleMarker(
+                [31.7978401, 34.8216119],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_3f36b7c2f7aa2c3804dc6ada2ecb4df1.bindTooltip(
+                `<div>
+                     <b>מטה בנימין</b><br>שיעור בתחום: 6.5%<br>מספר ילדים (n): 247
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6eddcca63ed65b8312b758b675fbbf02 = L.circleMarker(
+                [32.9295345, 35.1467283],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_6eddcca63ed65b8312b758b675fbbf02.bindTooltip(
+                `<div>
+                     <b>מכר גדידה</b><br>שיעור בתחום: 5.4%<br>מספר ילדים (n): 259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd5724901655240308da4b0e8ba4312a = L.circleMarker(
+                [32.3286181, 34.8566246],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_bd5724901655240308da4b0e8ba4312a.bindTooltip(
+                `<div>
+                     <b>נתניה</b><br>שיעור בתחום: 22.1%<br>מספר ילדים (n): 303
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4568c859d75dc90018a18529e508f5a5 = L.circleMarker(
+                [32.8638052, 35.3023184],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_4568c859d75dc90018a18529e508f5a5.bindTooltip(
+                `<div>
+                     <b>סכנין</b><br>שיעור בתחום: 20.2%<br>מספר ילדים (n): 455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9bc6d0f1a209fa4f41b98f35382b5943 = L.circleMarker(
+                [32.0877639, 34.8859985],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_9bc6d0f1a209fa4f41b98f35382b5943.bindTooltip(
+                `<div>
+                     <b>פתח תקווה</b><br>שיעור בתחום: 10.8%<br>מספר ילדים (n): 295
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1865277a5f2cf0f2a8b6858d935606a9 = L.circleMarker(
+                [32.9646301, 35.502451],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_1865277a5f2cf0f2a8b6858d935606a9.bindTooltip(
+                `<div>
+                     <b>צפת</b><br>שיעור בתחום: 13.3%<br>מספר ילדים (n): 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d31115c490d469c12e3a42ce21a60cc = L.circleMarker(
+                [31.9635712, 34.8101149],
+                {"bubblingMouseEvents": true, "color": "#333333", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_fcc5b1ad6923a7ee9e99729fad406f5f);
+        
+    
+            circle_marker_9d31115c490d469c12e3a42ce21a60cc.bindTooltip(
+                `<div>
+                     <b>ראשון לציון</b><br>שיעור בתחום: 10.2%<br>מספר ילדים (n): 315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_f4241fdd063a3c569185c79d2c3f0a18_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_5afbb6a4a377ce5da4b5aebb7ad4c820,
+                },
+                overlays :  {
+                    "\u05e4\u05d9\u05d6\u05d9/\u05d8\u05d9\u05e4\u05d5\u05dc (A1)" : feature_group_0a714d84bb67d59e458f96973d135ce9,
+                    "\u05de\u05e9\u05e4\u05d7\u05d4 (A2)" : feature_group_429f79f6289f98ba0db6f6707a9ce174,
+                    "\u05d4\u05d2\u05e0\u05d4 \u05de\u05d0\u05d7\u05e8\u05d9\u05dd (A3)" : feature_group_d5ed1250b09057367c7944982bd175d0,
+                    "\u05dc\u05d9\u05de\u05d5\u05d3\u05d9 (A4)" : feature_group_202005c3a8d99bf293af13fa91009ad4,
+                    "\u05d7\u05d1\u05e8\u05ea\u05d9 (A5)" : feature_group_4172c2fc9929e17960ba16f9cf7e23e2,
+                    "\u05e8\u05d2\u05e9\u05d9 (A6)" : feature_group_7f484d08fcc07def33c9f578036132bb,
+                    "\u05d4\u05ea\u05e0\u05d4\u05d2\u05d5\u05d9\u05d5\u05ea \u05e1\u05d9\u05db\u05d5\u05df (A7)" : feature_group_fcc5b1ad6923a7ee9e99729fad406f5f,
+                },
+            };
+            let layer_control_f4241fdd063a3c569185c79d2c3f0a18 = L.control.layers(
+                layer_control_f4241fdd063a3c569185c79d2c3f0a18_layers.base_layers,
+                layer_control_f4241fdd063a3c569185c79d2c3f0a18_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_fb3eb757be0384610821d5e022f2ea77);
+
+        
+</script>
+</body></html>
